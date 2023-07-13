@@ -55,6 +55,5 @@ describe User, type: :model do
       user.posts.destroy_all
       expect(user.three_most_recent_posts).to be_empty
     end
-
   end
 end

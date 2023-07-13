@@ -9,7 +9,7 @@ describe Post, type: :model do
   end
 
   before { subject.save }
-  
+
   it 'title cannot be blank' do
     subject.title = nil
     expect(subject).to_not be_valid
@@ -41,7 +41,7 @@ describe Post, type: :model do
     subject.comments_counter = 200
     expect(subject).to be_valid
   end
-  
+
   it 'comments_counter cannot be a negative' do
     subject.comments_counter = -1
     expect(subject).to_not be_valid
@@ -63,5 +63,4 @@ describe Post, type: :model do
     subject.likes_counter = -1
     expect(subject).to_not be_valid
   end
-
 end

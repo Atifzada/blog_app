@@ -19,7 +19,7 @@ describe Post, type: :model do
     expect(subject).to be_valid
   end
 
-  it "should check the number of the  title's characters" do
+  it "should check number of the  title's characters" do
     subject.title = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     Eius dolorum velit modi suscipit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolorum
     velit modi suscipit unde dignissimos unde dignissimos alias deserunt beatae sit

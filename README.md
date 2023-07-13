@@ -72,6 +72,8 @@
 
 - **[Creating a data model]**
 - **[Process data in model]**
+- **[Add validations to model]**
+- **[Add Rspec tests to model]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

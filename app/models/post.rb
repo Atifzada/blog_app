@@ -3,7 +3,6 @@ class Post < ApplicationRecord
   has_many :comments, foreign_key: 'post_id'
   has_many :likes, foreign_key: 'post_id'
 
-
   after_save :update_posts_counter
 
   def five_recent_comments

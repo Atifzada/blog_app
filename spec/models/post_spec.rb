@@ -63,4 +63,27 @@ describe Post, type: :model do
     subject.likes_counter = -1
     expect(subject).to_not be_valid
   end
+  describe 'scopes' do
+    describe '.five_recent_comments' do
+        let!(:user) { User.create(name: 'Atif Zada') }  
+      let!(:post) { Post.create(title: 'Test Post', author: user) }
+      let!(:recent_comments) { create_comments(post, 5, 1.day.ago) }
+      let!(:older_comments) { create_comments(post, 3, 2.days.ago) }
+
+      it 'returns the five most recent comments for the post' do
+        expect(Post.five_recent_comments(post)) == (recent_comments.reverse)
+      end
+
+      it 'limits the result to five comments' do
+        expect(Post.five_recent_comments(post).count) == (5)
+      end
+    end
+  end
+  def create_comments(post, count, created_at)
+    comments = []
+    count.times do
+      comments << Comment.create(post:, created_at:)
+    end
+    comments
+  end
 end

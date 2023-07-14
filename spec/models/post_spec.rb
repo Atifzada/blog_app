@@ -86,5 +86,12 @@ describe Post, type: :model do
     end
     comments
   end
+  describe '#update_posts_counter' do
+  let!(:author) { User.create(name: 'John Doe', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'A user', posts_counter: 0) }
+  let!(:post) { Post.create(author: author, title: 'Test Post', text: 'This is a test post', likes_counter: 0, comments_counter: 0) }
 
+  it 'increments the posts_counter of the author' do
+    expect { post.update_posts_counter }.to change { author.reload.posts_counter }.by(1)
+  end
+end
 end

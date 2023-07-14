@@ -86,4 +86,5 @@ describe Post, type: :model do
     end
     comments
   end
+
 end

@@ -72,6 +72,8 @@
 
 - **[Creating a data model]**
 - **[Process data in model]**
+- **[Add validations to model]**
+- **[Add Rspec tests to model]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +81,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [comming soon]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,6 +185,6 @@ If you like this project you can follow me and give the project a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is a [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

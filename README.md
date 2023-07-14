@@ -185,6 +185,6 @@ If you like this project you can follow me and give the project a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is a [MIT](./LICENSE.md) licensed.
+This project is a [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

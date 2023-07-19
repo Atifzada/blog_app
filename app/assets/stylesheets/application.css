@@ -1,15 +1,88 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+ .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .imgbox {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .my_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 60px;
+    width: 50%;
+    padding: 1.3rem;
+  }
+    
+  .box {
+    border: solid 1px black;
+  }
+  
+  
+  .title {
+    align-self: center;
+    padding: 0 0.5rem;
+  }
+  
+  .posts_counter {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-left: 5rem;
+    margin-right: 0.25rem;
+  }
+  
+  a {
+    color: black;
+    text-decoration: solid;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 10rem;
+    width: 66%;
+  }
+  
+  .counters {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-right: 1rem;
+  }
+    
+  .my-btns {
+    align-self: center;
+    width: max-content;
+    border: solid 1px black;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dis_contt {
+    margin: 2rem 4rem;
+  }
+    
+  .indexbox {
+    width: 66%;
+    margin-left: 10rem;
+  }
+  
+  .commentsbox {
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .posts_container{
+    display: flex;
+    justify-content: space-around;
+  }

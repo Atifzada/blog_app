@@ -1,8 +1,8 @@
-<div class='show_container'>
+<div class='dis_contt'>
     <div class='box'>
-        <div class='posts_info'>
+        <div class='posts_container'>
             <p><%= @post.title%> by <%= @post.author.name%></p>
-            <p>Comments: <%= @post.comment_counter %> Likes: <%= @post.likes_counter %></p>
+            <p>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></p>
         </div>
         <p>
             <%= @post.text%>

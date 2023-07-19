@@ -6,14 +6,14 @@ RSpec.describe User, type: :request do
       get users_path
       expect(response).to have_http_status(:success)
       expect(response).to render_template('users/index')
-      expect(response.body).to include('show all users')
+      expect(response.body).to include('Total numbers of posts')
     end
 
     it 'should render the user show' do
       get '/users/:id'
       expect(response).to have_http_status(:success)
       expect(response).to render_template('users/show')
-      expect(response.body).to include('show a particular user')
+      expect(response.body).to include('Total numbers of posts')
     end
   end
 end

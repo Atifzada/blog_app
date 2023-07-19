@@ -1,88 +1,87 @@
- .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
 
-  .imgbox {
-    height: 100px;
-    width: 100px;
-  }
-  
-  .my_card {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    height: 60px;
-    width: 50%;
-    padding: 1.3rem;
-  }
-    
-  .box {
-    border: solid 1px black;
-  }
-  
-  
-  .title {
-    align-self: center;
-    padding: 0 0.5rem;
-  }
-  
-  .posts_counter {
-    align-self: flex-end;
-    justify-self: flex-end;
-    margin-left: 5rem;
-    margin-right: 0.25rem;
-  }
-  
-  a {
-    color: black;
-    text-decoration: solid;
-  }
-  
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 10rem;
-    width: 66%;
-  }
-  
-  .counters {
-    align-self: flex-end;
-    justify-self: flex-end;
-    padding-right: 1rem;
-  }
-    
-  .my-btns {
-    align-self: center;
-    width: max-content;
-    border: solid 1px black;
-  }
+.imgbox {
+  height: 100px;
+  width: 100px;
+}
 
-  .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dis_contt {
-    margin: 2rem 4rem;
-  }
-    
-  .indexbox {
-    width: 66%;
-    margin-left: 10rem;
-  }
-  
-  .commentsbox {
-    display: flex;
-    flex-direction: column;
-  }
-    
-  .posts_container{
-    display: flex;
-    justify-content: space-around;
-  }
+.my_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 60px;
+  width: 50%;
+  padding: 1.3rem;
+}
+
+.box {
+  border: solid 1px black;
+}
+
+.title {
+  align-self: center;
+  padding: 0 0.5rem;
+}
+
+.posts_counter {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-left: 5rem;
+  margin-right: 0.25rem;
+}
+
+a {
+  color: black;
+  text-decoration: solid;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 10rem;
+  width: 66%;
+}
+
+.counters {
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding-right: 1rem;
+}
+
+.my-btns {
+  align-self: center;
+  width: max-content;
+  border: solid 1px black;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dis_contt {
+  margin: 2rem 4rem;
+}
+
+.indexbox {
+  width: 66%;
+  margin-left: 10rem;
+}
+
+.commentsbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts_container {
+  display: flex;
+  justify-content: space-around;
+}

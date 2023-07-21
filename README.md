@@ -74,6 +74,7 @@
 - **[Process data in model]**
 - **[Added Routes in model]**
 - **[Added Users and Posts Views in model]**
+- **[Added Likes and Comments for Blogs]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

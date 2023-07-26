@@ -155,5 +155,4 @@ RSpec.describe 'User', type: :system do
       expect(page).to have_content 'Atif: wassup'
     end
   end
-  
 end

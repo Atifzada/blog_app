@@ -14,6 +14,7 @@ class User < ApplicationRecord
   def three_most_recent_posts
     posts.order(created_at: :asc).limit(3).reverse
   end
+
   def set_default
     self.name = email.split('@')[0]
     self.posts_counter = 0

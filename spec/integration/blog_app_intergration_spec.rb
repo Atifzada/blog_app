@@ -130,4 +130,30 @@ RSpec.describe 'User', type: :system do
       expect(page).to have_current_path("/users/#{@jin.id}/posts/#{@post1.id}")
     end
   end
+
+  describe 'Post#show' do
+    before(:each) do
+      visit "/users/#{@jin.id}/posts/#{@post1.id}"
+    end
+    it 'post title' do
+      expect(page).to have_content 'title 1'
+    end
+    it 'Author name' do
+      expect(page).to have_content 'title 1 by Ahmed'
+    end
+    it 'comments count show' do
+      expect(page).to have_content 'Comments: 2'
+    end
+    it 'likes count show' do
+      expect(page).to have_content 'Likes: 1'
+    end
+    it 'who commented?' do
+      expect(page).to have_content(@profile1.name)
+    end
+    it 'show all comments with name:' do
+      expect(page).to have_content 'Atif: Hello'
+      expect(page).to have_content 'Atif: wassup'
+    end
+  end
+  
 end

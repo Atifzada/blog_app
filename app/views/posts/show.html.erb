@@ -12,7 +12,7 @@
     <%= render 'shared/like' %>
     <a href="/users/<%= @post.author.id %>/posts/<%= @post.id %>/comments/new">Comment</a>
     <div class='box'>
-        <% @post.includes(:author).comments.each do |comment|%>
+        <% @post.comments.each do |comment|%>
             <p><%= comment.author.name%>: <%= comment.text %></p>    
         <% end %>
     </div>

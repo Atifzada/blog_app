@@ -75,6 +75,7 @@
 - **[Added Likes and Comments for Blogs]**
 - **[Fix N+1 problem]**
 - **[Add Integrations]**
+- **[Add Authentication with devise gem]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

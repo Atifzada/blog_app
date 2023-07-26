@@ -1,7 +1,7 @@
 <%= render 'shared/user_info', user: @user %>
 
 <div class='indexbox'>
-  <% @posts.each do |post| %>
+  <% @posts.includes(:author).each do |post| %>
     <div class='box commentsbox'>
       <a href='/users/<%= post.author_id%>/posts/<%= post.id%>'><%= post.title%></a>
       <p>
@@ -10,7 +10,7 @@
       <p class='counters'>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %></p>
   </div>
   <div class='box'>
-    <% Post.five_recent_comments(post).each do |comment| %>
+    <% Post.includes(:author, :post).five_recent_comments(post).each do |comment| %>
       <p><%= comment.author.name %> - <%= comment.text %></p>
     <% end %>
   </div>

@@ -15,14 +15,12 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -75,7 +73,8 @@
 - **[Added Routes in model]**
 - **[Added Users and Posts Views in model]**
 - **[Added Likes and Comments for Blogs]**
-
+- **[Fix N+1 problem]**
+- **[Add Integrations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,6 +121,7 @@ To run the project, navigate to the project directory and execute the following 
 To run tests, run the following command:
 
 Run the following command
+
 ```sh
 rubocop
 ```
@@ -131,12 +131,18 @@ rubocop
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Atif Zada**
+
 - GitHub: [@Atif-Zada](https://github.com/AtifZada)
 - LinkedIn: [@Atif-Zada](https://linkedin.com/in/AtifZada)
 
+👤 **Ubda Nam**
+
+- GitHub: [@UbdaNam](https://github.com/UbdaNam)
+- LinkedIn: [Abdurahim M.](https://www.linkedin.com/in/abdurahim-miftah/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

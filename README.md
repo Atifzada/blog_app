@@ -78,7 +78,6 @@
 - **[Fix N+1 problem]**
 - **[Add Integrations]**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -124,6 +123,7 @@ To run the project, navigate to the project directory and execute the following 
 To run tests, run the following command:
 
 Run the following command
+
 ```sh
 rubocop
 ```
@@ -133,12 +133,18 @@ rubocop
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Atif Zada**
+
 - GitHub: [@Atif-Zada](https://github.com/AtifZada)
 - LinkedIn: [@Atif-Zada](https://linkedin.com/in/AtifZada)
 
+👤 **Ubda Nam**
+
+- GitHub: [@UbdaNam](https://github.com/UbdaNam)
+- LinkedIn: [Abdurahim M.](https://www.linkedin.com/in/abdurahim-miftah/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

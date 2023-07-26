@@ -130,5 +130,4 @@ RSpec.describe 'User', type: :system do
       expect(page).to have_current_path("/users/#{@jin.id}/posts/#{@post1.id}")
     end
   end
-
 end

@@ -3,6 +3,13 @@
         <div class='posts_container'>
             <p><%= @post.title%> by <%= @post.author.name%></p>
             <p>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></p>
+            <% if can? :destroy, @post %>
+        <%= form_with(model: @post, url: user_post_path(@user, @post), method: :delete, data: { confirm: "Please confirm?" }) do |form| %>
+            <%= form.hidden_field :delete, value: "#{@post.id}"%>
+            <%= form.submit "Delete Post" %>
+            <% end %>
+        <% else %>
+        <% end %>
         </div>
         <p>
             <%= @post.text%>
@@ -14,6 +21,13 @@
     <div class='box'>
         <% @post.comments.each do |comment|%>
             <p><%= comment.author.name%>: <%= comment.text %></p>    
+            <% if can? :destroy, comment %>
+        <%= form_with(model: @comment, url: user_post_comment_path(@user, @post, comment), method: :delete, data: { confirm: "Please confirm?" }) do |form| %>
+            <%= form.hidden_field :delete, value: "#{comment.id}"%>
+            <%= form.submit "Delete" %>
+            <% end %>
+        <% else %>
+        <% end %>
         <% end %>
     </div>
 </div>

@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
   def index
     @posts = Post.where(author_id: params[:user_id])
     @user = User.find(params[:user_id])
@@ -6,6 +7,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:post_id])
+    @user = @post.author
   end
 
   def new
@@ -23,6 +25,12 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path
   end
 
   private

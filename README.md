@@ -39,9 +39,9 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>HTML</summary>
+  <summary>ERB</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
+    <li><a href="#">ERB</a></li>
   </ul>
 </details>
 <details>
@@ -103,10 +103,8 @@ This project does require additional dependencies. However, it uses RuboCop as a
 
 ```sh
 bundle install
-```
-
-```sh
-gem install colorize
+rails db:create
+rails db:migrate
 ```
 
 ### Usage
@@ -114,7 +112,7 @@ gem install colorize
 To run the project, navigate to the project directory and execute the following command:
 
 ```sh
-  ruby test.rb
+  rails s
 ```
 
 ### Run tests
@@ -124,7 +122,7 @@ To run tests, run the following command:
 Run the following command
 
 ```sh
-rubocop
+rspec spec/
 ```
 
 ### Deployment

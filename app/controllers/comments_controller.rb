@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
       redirect_to user_post_path(@user, @post), alert: 'Comment not found'
     end
   end
-  
+
   private
 
   def comment_params

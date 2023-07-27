@@ -3,6 +3,13 @@
         <div class='posts_container'>
             <p><%= @post.title%> by <%= @post.author.name%></p>
             <p>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></p>
+            <% if can? :destroy, @post %>
+        <%= form_with(model: @post, url: user_post_path(@user, @post), method: :delete, data: { confirm: "Please confirm?" }) do |form| %>
+            <%= form.hidden_field :delete, value: "#{@post.id}"%>
+            <%= form.submit "Delete Post" %>
+            <% end %>
+        <% else %>
+        <% end %>
         </div>
         <p>
             <%= @post.text%>

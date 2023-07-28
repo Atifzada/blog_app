@@ -20,4 +20,13 @@ Rails.application.routes.draw do
       post 'likes', to: 'likes#create' # Nested route for creating a like
     end
   end
+  
+  #Routes for API endpoints
+  namespace :api, defaults: { format: :json } do
+    resources :users, only: [] do
+      resources :posts, only: [:index] do
+        resources :comments, only: [:index, :create]
+      end
+    end
+  end
 end

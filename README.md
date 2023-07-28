@@ -76,6 +76,7 @@
 - **[Fix N+1 problem]**
 - **[Add Integrations]**
 - **[Add Authentication with devise gem]**
+- **[Add API endpoints]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
